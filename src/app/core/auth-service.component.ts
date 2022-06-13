@@ -22,4 +22,7 @@ export class AuthService {
         this._userManager = new UserManager(stSettings);
      }
 
+     login() {
+         return this._userManager.signinRedirect();
+     }
 }
